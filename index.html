@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One...</title>
+    <style>
+        /* .heading-line{
+            background-color:khaki;
+            padding-top: 10px;
+            padding-left: 5%;
+            padding-bottom: 5px;
+            width: 100%;
+            top: -0px;
+            left: -0px;
+            height: 50px;
+            font-size:x-large;
+            position: fixed;
+        } */
+
+        .link-section{
+            
+            padding-left: 5%;
+            padding-bottom: 100%;
+            top: -0px;
+            left: -0px;
+            background-color:black;
+            width: 100%;
+            color: aliceblue;
+            position:fixed;
+        }
+        
+        #clg-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 80px;
+        }
+        #links{
+            text-align: center;
+            background-color: gray;
+            width: 200px;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size:x-large;
+        }
+
+        img{
+            border-radius: 100px;
+        }
+
+        @media (max-width: 600px) {
+            #clg-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 10px;
+            }
+
+            #links {
+                font-size: medium;
+                padding: 5px;
+            }
+
+            img {
+                max-width: 150px;
+            }
+        }
+</style>
+</head>
+<body>
+    <!-- <header class="heading-line">
+        Blah Blah...
+    </header> -->
+
+    <section class="link-section">
+        <h1>College</h1>
+        <div id="clg-grid">
+            <div class="link-1" id="links">Sraap<a href="https://sraap.in/slogin.php"><img src="./images/sru_logo.png" width="200px" height="200px"></a></div>
+            <div class="link-2" id="links">Sruniv<a href="https://sruniv.com/"><img src="./images/sru_logo.png" width="200px" height="200px"></a></div>
+            <div class="link-3" id="links">Canvas<a href="https://canvas.instructure.com/?login_success=1"><img src="./images/canvas logo.jpg" width="200px" height="200px"></a></div>
+            <div class="link-4" id="links">GDB<a href="https://www.onlinegdb.com/classroom"><img src="./images/gdb logo.jpg" width="200px" height="200px"></a></div>
+            <div class="link-5" id="links">Others</div>
+    </section>
+</html>
